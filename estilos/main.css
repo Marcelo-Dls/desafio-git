@@ -386,3 +386,30 @@ p span {
     }     
 } 
 /*end responsive-425 */
+
+/*animacion de links*/
+.anim { 
+color: #318aac !important;
+font-size: 20px;
+font-weight: 500;
+padding: 0.5em 1.2em;
+background: rgba(0,0,0,0);
+border: 2px solid;
+border-color: black;
+transition: all 1s ease;
+position: relative;
+}
+.anim:hover {
+background: #318aac;
+color: #fff !important;
+}
+/*animacion de imagen-logo*/
+.imagen:hover{
+border-radius:50%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px rgb(222, 55, 83);
+-webkit-box-shadow: 0px 0px 15px 15px rgb(222, 55, 83);
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+transition-duration: 1s;
+}
