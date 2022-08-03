@@ -11,76 +11,125 @@
         <title>ConoceBuenosAires</title>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li class="imagen">
-                    <a href=""><img src="pages/images/logo.png" alt="logo" height="120px" ></a>
-                </li>
-                <li>
-                    <a href="">Galeria</a>
-                </li>
-                <li>
-                    <a href="pages/tours.html">Tours</a>
-                </li>
-                <li>
-                    <a href="pages/mas-visitados.html">Más visitados</a>
-                </li>
-                <li>
-                    <a href="pages/inicio.html">Inicio</a>
-                </li>        
-            </ul> 
-        </nav> 
-        <header class="titulos">
-            <h1>Galeria
-            </h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, repudiandae consequatur molestias perferendis cupiditate ipsam accusamus vero rerum quod a molestiae nam? Illum libero odio maxime nesciunt eaque, molestiae totam?
-            </p>
-            <img src="" alt="">
-            <h3>Paisajes Naturales      
-            </h3>
+        <!--Navegador-->
+        <header>    
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand">
+                        <h1>CONOCÉ BUENOS AIRES</h1>
+                    </a>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </nav>
         </header>
-        <hr>
-        <main class="p-5 bg-light">
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card h-100 card text-bg-info p-3">
-                            <img src="pages/images/flora-2.png" class="card-img-top" alt="imagen-flora-bsas">
-                            <div class="card-body">
-                                <h5 class="card-title">Buenos Aires Flora</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://www.buenosaires.gob.ar/reservaecologica/flora" class="btn btn-primary">Conocer Más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 card text-bg-info p-3">
-                            <img src="pages/images/fauna.png" class="card-img-top" alt="imagen-faunsa-bsas">
-                            <div class="card-body">
-                                <h5 class="card-title">Buenos Aires Fauna</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://www.buenosaires.gob.ar/reservaecologica/fauna" class="btn btn-primary">Conocer Más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 card text-bg-info p-3">
-                            <img src="pages/images/paisaje.png" class="card-img-top" alt="imagen-paisaje-bsas">
-                            <div class="card-body">
-                                <h5 class="card-title">Buenos Aires Paisajes</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://www.buenosaires.gob.ar/reservaecologica/la-reserva" class="btn btn-primary">Conocer Más</a>
-                            </div>
-                        </div>
-                    </div>
+        <main class="bg-light">
+            <!--Bandera-nav-->
+            <div class="btn-group inicio">
+                <div class="class">
+                    <a href="pages/galeria.html" class="btn btn-primary active anim" aria-current="page">Galeria</a>
+                </div>
+                <div class="class">
+                    <a href="" class="btn btn-primary active anim" aria-current="page">Inicio</a>
+                </div>
+                <div class="class">
+                    <a href="pages/contacto.html" class="btn btn-primary active anim" aria-current="page">Contacto</a>
                 </div>
             </div>
+                
+            <!--menu-links-->   
+            <div class="menu">
+                <div class="naturales">
+                    <a href="pages/naturales.html">
+                        <h1>Naturales</h1>
+                    </a>
+                </div>
+                <div class="clasicos">
+                    <a href="pages/clasicos.html">
+                        <h1>Clásicos</h1>
+                    </a>
+                </div>
+                <div class="culturales">
+                    <a href="pages/culturales.html">
+                        <h1>Culturales</h1>
+                    </a>
+                </div>
+            </div>
+            <!--tabla-imperdibles-->
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Los 9</th>
+                        <th>Imperdibles de Buenos Aires</th>
+                        <th>Referencias</th>
+                    </tr>    
+                </thead>
+                <tbody>
+                    <tr class="table-active">
+                        <td></td>
+                        <td>Nº1 </td>
+                        <td>Obelisco</td>  
+                        <td>✪✪✪✪✪_🏞</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Nº2</td>
+                        <td>Puerto Madero</td>
+                        <td>✪✪✪✪✪_🏞</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Nº3</td>
+                        <td>Teatro Colón</td>
+                        <td>✪✪✪✪✪_🏘_💲</td>    
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Nº4</td>
+                        <td>Calle Museo Caminito</td>
+                        <td>✪✪✪✪✪_🏞</td>    
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Nº5</td>
+                        <td>El Ateneo Grand Splendid</td>
+                        <td>✪✪✪✪✪_🏘</td>   
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Nº6</td>
+                        <td>Jardín Japones</td>  
+                        <td>✪✪✪✪✪_🏞_💲</td>  
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Nº7</td>
+                        <td>Floralis Genérica</td>  
+                        <td>✪✪✪✪___🏞</td>  
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Nº8</td>
+                        <td>Planetario Galileo Galilei</td>   
+                        <td>✪✪✪✪___🏘_💲</td> 
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Nº9</td>
+                        <td>Reserva Ecológica</td>   
+                        <td>✪✪✪_____🏞</td> 
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> Espacios abiertos 🏞</td>
+                        <td> Espacios cerrados 🏘</td>   
+                        <td> Entrada paga 💲</td> 
+                    </tr>
+                </tbody>
+            </table>
         </main>
         <hr>
         <div class="mapa-responsive">
