@@ -11,33 +11,58 @@
         <title>ConoceBuenosAires</title>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li class="imagen">
-                    <a href=""><img src="images/logo.png" alt="logo" height="120px" ></a>
-                </li>
-                <li>
-                    <a href="../index.html">Galeria</a>
-                </li>
-                <li>
-                    <a href="tours.html">Tours</a>
-                </li> 
-                <li>
-                   <a href="mas-visitados.html">Más visitados</a>
-                </li> 
-                <li>
-                   <a href="inicio.html">Inicio</a>
-                </li>        
-            </ul> 
-        </nav> 
-        <header class="titulos">
-            <h1>Contacto
-            </h1>
-            <p>Para contacto dejanos tus comentarios y sugerencias
-            </p>
+        <!--Navegador-->
+        <header>    
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand"><h1>CONOCÉ BUENOS AIRES</h1></a>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </nav>
         </header>
-        <hr>   
         <main class="bg-light">
+            <!--Bandera-nav-->
+            <div class="btn-group inicio">
+                <div class="class">
+                    <a href="galeria.html" class="btn btn-primary active anim" aria-current="page">Galeria</a>
+                </div>
+                <div class="class">
+                    <a href="../index.html" class="btn btn-primary active anim" aria-current="page">Inicio</a>
+                </div>
+                <div class="class">
+                    <a href="" class="btn btn-primary active anim" aria-current="page">Contacto</a>
+                </div>
+            </div>
+                
+            <!--menu-links-->   
+            <div class="menu">
+                <div class="naturales">
+                    <a href="naturales.html">
+                        <h1>Naturales</h1>
+                    </a>
+                </div>
+                <div class="clasicos">
+                    <a href="clasicos.html">
+                        <h1>Clásicos</h1>
+                    </a>
+                </div>
+                <div class="culturales">
+                    <a href="culturales.html">
+                        <h1>Culturales</h1>
+                    </a>
+                </div>
+            </div>
+            <header class="titulos">
+                <h1>Contacto
+                </h1>
+                <p>Para contacto dejanos tus comentarios y sugerencias
+                </p>
+            </header>
+            <hr>   
+        
             <div id="centrar">
                 <img src="images/comentario.png" alt="dejando-comentarios" height="350px" width="400px">
             </div>
