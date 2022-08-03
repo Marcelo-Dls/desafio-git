@@ -1,0 +1,15 @@
+/*estilos menu-links*/
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .menu div {
+    color: #fff;
+    width: 350px;
+    border: solid black;
+    border-radius: 5px;
+    background-repeat: round;
+    background-size: cover;
+    text-align: center; }
+    .menu div a {
+      color: #fff !important; }

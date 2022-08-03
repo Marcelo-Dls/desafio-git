@@ -1,0 +1,28 @@
+$widht-menu: 350px;
+$color-menu: #fff;
+$border-menu: solid black;
+$border-radius-menu: 5px;
+$background-repeat-menu: round;
+$background-size-menu: cover;
+$text-align-menu: center;
+
+/*estilos menu-links*/
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    div {
+        color: $color-menu;
+        width: $widht-menu;
+        border: $border-menu;
+        border-radius: $border-radius-menu;
+        background-repeat: $background-repeat-menu;
+        background-size: $background-size-menu;
+        text-align: $text-align-menu;
+        a {
+            color: $color-menu !important;
+        }
+        
+    }
+
+}
