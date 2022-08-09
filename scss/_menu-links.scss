@@ -1,3 +1,9 @@
+* {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
 $widht-menu: 350px;
 $color-menu: #fff;
 $border-menu: solid black;
@@ -26,3 +32,31 @@ $text-align-menu: center;
     }
 
 }
+.naturales {
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.a6QWNbvzEHrLENZFLSnPyAHaE8&pid=Api);
+}    
+.clasicos {
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.bWWpfz3s6nNiTVCTU411igHaFj&pid=Api);
+}
+.culturales {
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.eARvDHHkF2Sps627K8vzlwAAAA&pid=Api);
+}
+
+/*animación menu-links*/
+
+.naturales:hover {
+    border: solid black;
+    border-radius: 15px;
+}
+.clasicos:hover {
+    border: solid black;
+    border-radius: 15px;
+}
+.culturales:hover {
+    border: solid black;
+    border-radius: 15px;
+}  
+a :hover {
+  color: black;
+  text-decoration: underline black;
+}   
