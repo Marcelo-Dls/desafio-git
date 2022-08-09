@@ -1,0 +1,231 @@
+
+  /*estilos bandera-nav*/
+  .inicio {
+      background-image: url(https://tse3.mm.bing.net/th?id=OIP.sQuOF3qAxaPja7H9JQfJHQHaE3&pid=Api);
+      background-repeat:repeat-x;
+      background-position: top;
+      display: flex;
+        justify-content: space-around;
+        align-items: top;
+        height: 50vh;
+        flex-direction: row;
+  }
+  /*animación bandera-nav*/
+  .anim {
+      font-size: 20px;
+      font-weight: 500;
+      padding: 0.5em 1.2em;
+      background: rgba(0,0,0,0);
+      border: 2px solid;
+      border-color: black;
+      transition: all 1s ease;
+      position: relative;
+  }
+  .anim:hover {
+      background: #4298ba;
+      color: #fff !important;
+  }
+ 
+  /* destacar y dividir secciones*/
+  .titulos {
+      padding: 10px;
+      color: #fff;
+      background-color:rgb(45, 45, 45);
+      text-align: center;
+      border-radius: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: oblique;
+      font-size: 20px;
+      border: solid 5px black;
+  }
+  /* centrar items*/
+  #centrar {
+      padding: 5px;
+      margin: 5px;
+      color:#fff;
+      background-color:rgb(45, 45, 45);
+      text-align:center;
+      border: solid;
+      border-radius: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: oblique;
+      font-size: 20px;
+  }
+  /*th de tablas*/
+  .encabezados {
+      color: black;
+      text-decoration:underline;
+  }
+  div {
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+
+}
+  /*grid  mas-visitados
+  .catalogo {
+      background-color:rgb(255, 204, 0);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 300px 300px 300px;
+      text-align: center;
+      border: solid 3px rgb(222, 55, 83);
+      border-radius: 10px;
+  
+  }
+  .catalogo div {
+      padding: 15px;
+      margin: 5px; 
+      border: solid 3px rgb(222, 55, 83);
+  }
+  */
+  /* catalogo de inicio
+  .catalogo-2 {
+      background-color:rgb(255, 204, 0);
+      display: grid;
+      grid-template-columns:auto;
+      grid-template-rows:repeat(3, 1fr);
+      text-align: center;
+      border: solid 3px rgb(222, 55, 83);
+      border-radius: 10px;
+  }
+  */
+  /*grids                                                                                                                                                                    
+  .contarea {
+      display: grid;
+      background-color: rgb(107, 225, 64);
+      border: solid 3px rgb(222, 55, 83);
+      grid-template-areas: 
+      "area1 area2"
+      "area3 area4";
+  }
+  
+  .area1 {
+      grid-area: area1;
+      text-decoration: underline;   
+      font-size: 25px;
+  }
+  .area2 {
+      grid-area: area2;
+      font-size: 20px;
+  }
+  .area3 {
+      grid-area: area3;
+  }
+  .area4 {
+      grid-area: area4;
+  }   
+  */
+  /*responsive-768 */
+  @media screen and (max-width: 768px)  {
+      main {
+          padding: 5px;
+          margin: auto;
+          
+      }
+      ul {
+          display: flex;
+          flex-flow: column-reverse;
+      }    
+      .cat-1 {
+          background-size:auto;
+      }
+      .cat-4 {
+          background-size:cover;
+      }
+      .cat-9 {
+          background-size:auto;
+      }
+      .contarea {
+          height: 60vh;
+          min-height: 350px;
+          padding: 24px;
+          display: block;
+          image-orientation: from-image;
+          align-content: center;
+      }
+      textarea {
+          padding: 5px;
+          margin: auto;
+          width: 100%;
+      }
+      .catalogo-2 {
+          display: block;
+      }
+      .img-responsive {
+         display: none;
+      }
+      .mapa-responsive {
+          position: relative;
+          padding-bottom: 75%; 
+          height: 0;
+          overflow: hidden;
+      }
+      .mapa-responsive iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+      }    
+      .catalogo {
+          margin: 0;
+          display: block;
+          text-align: center;
+  
+          font-size: 1.5em;
+          align-self:center;
+      }
+      .catalogo div {
+          display: block;
+          
+          align-items: center;
+          text-align: center;
+          background-size: cover;
+          max-width: 100%;
+      }
+      
+  }
+  /*end responsive-768 */
+  
+  /*responsive-425 */
+  @media screen and (max-width: 425px) {
+      
+      .main {
+          margin: 5px;
+          padding: 5px;
+      }
+  
+      nav {
+          font-size: 1.5em;
+          display: block;
+          margin: 24px 0;
+      }
+      .contarea {
+          display: block;
+      }
+  
+      .catalogo div {
+          display: block;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          background-size: cover;
+          max-width: 100%;
+      }
+      div img {
+          display: none;
+      }
+      
+      form {
+          margin: 0px;
+      }
+      .tabla-responsive {
+          display: none;
+          border-collapse: collapse;
+          border-spacing: 0;
+          width: 100%;
+      }     
+  } 
+  /*end responsive-425 */
+  
