@@ -1,8 +1,9 @@
+    /*variables slider*/
 $width-slider: 800px;
 $padding-slider: 30px;   
 $height-slider: 300px;
 
-/*estilos slider*/
+    /*estilos slider*/
 .fondo-cont {
     background-color: rgb(45, 45, 45);
     font-family: sans-serif;
@@ -46,6 +47,8 @@ ul.slider li:first-child{
 ul.slider li:target{
     opacity: 1;
 }
+
+    /*botones slider*/
 .menu-slider {
     text-align: center;
     margin: 20px;

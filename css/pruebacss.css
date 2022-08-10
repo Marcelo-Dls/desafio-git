@@ -1,9 +1,12 @@
 @charset "UTF-8";
+/*imports*/
+/*reseteo*/
 * {
-  margin: 5px;
-  padding: 5px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box; }
 
+/*variables menu-links*/
 /*estilos menu-links*/
 .menu {
   display: flex;
@@ -30,15 +33,7 @@
   background-image: url(https://tse1.mm.bing.net/th?id=OIP.eARvDHHkF2Sps627K8vzlwAAAA&pid=Api); }
 
 /*animación menu-links*/
-.naturales:hover {
-  border: solid black;
-  border-radius: 15px; }
-
-.clasicos:hover {
-  border: solid black;
-  border-radius: 15px; }
-
-.culturales:hover {
+.naturales:hover, .clasicos:hover, .culturales:hover {
   border: solid black;
   border-radius: 15px; }
 
@@ -46,6 +41,7 @@ a :hover {
   color: black;
   text-decoration: underline black; }
 
+/*variables slider*/
 /*estilos slider*/
 .fondo-cont {
   background-color: #2d2d2d;
@@ -85,6 +81,7 @@ ul.slider li:first-child {
 ul.slider li:target {
   opacity: 1; }
 
+/*botones slider*/
 .menu-slider {
   text-align: center;
   margin: 20px; }
@@ -162,60 +159,6 @@ div {
   margin: 10px;
   text-align: center; }
 
-/*grid  mas-visitados
-  .catalogo {
-      background-color:rgb(255, 204, 0);
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 300px 300px 300px;
-      text-align: center;
-      border: solid 3px rgb(222, 55, 83);
-      border-radius: 10px;
-  
-  }
-  .catalogo div {
-      padding: 15px;
-      margin: 5px; 
-      border: solid 3px rgb(222, 55, 83);
-  }
-  */
-/* catalogo de inicio
-  .catalogo-2 {
-      background-color:rgb(255, 204, 0);
-      display: grid;
-      grid-template-columns:auto;
-      grid-template-rows:repeat(3, 1fr);
-      text-align: center;
-      border: solid 3px rgb(222, 55, 83);
-      border-radius: 10px;
-  }
-  */
-/*grids                                                                                                                                                                    
-  .contarea {
-      display: grid;
-      background-color: rgb(107, 225, 64);
-      border: solid 3px rgb(222, 55, 83);
-      grid-template-areas: 
-      "area1 area2"
-      "area3 area4";
-  }
-  
-  .area1 {
-      grid-area: area1;
-      text-decoration: underline;   
-      font-size: 25px;
-  }
-  .area2 {
-      grid-area: area2;
-      font-size: 20px;
-  }
-  .area3 {
-      grid-area: area3;
-  }
-  .area4 {
-      grid-area: area4;
-  }   
-  */
 /*responsive-768 */
 @media screen and (max-width: 768px) {
   main {
