@@ -1,9 +1,11 @@
+    /*reseteo*/
 * {
-    margin: 5px;
-    padding: 5px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-  }
+  } 
 
+    /*variables menu-links*/
 $widht-menu: 350px;
 $color-menu: #fff;
 $border-menu: solid black;
@@ -12,7 +14,7 @@ $background-repeat-menu: round;
 $background-size-menu: cover;
 $text-align-menu: center;
 
-/*estilos menu-links*/
+    /*estilos menu-links*/
 .menu {
     display: flex;
     flex-direction: row;
@@ -42,19 +44,16 @@ $text-align-menu: center;
     background-image: url(https://tse1.mm.bing.net/th?id=OIP.eARvDHHkF2Sps627K8vzlwAAAA&pid=Api);
 }
 
-/*animación menu-links*/
-
+    /*animación menu-links*/
 .naturales:hover {
     border: solid black;
     border-radius: 15px;
 }
 .clasicos:hover {
-    border: solid black;
-    border-radius: 15px;
+    @extend .naturales:hover;
 }
 .culturales:hover {
-    border: solid black;
-    border-radius: 15px;
+    @extend .naturales:hover;
 }  
 a :hover {
   color: black;

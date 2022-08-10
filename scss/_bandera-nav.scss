@@ -1,0 +1,27 @@
+    /*estilos bandera-nav*/
+.inicio {
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.sQuOF3qAxaPja7H9JQfJHQHaE3&pid=Api);
+    background-repeat:repeat-x;
+    background-position: top;
+    display: flex;
+      justify-content: space-around;
+      align-items: top;
+      height: 50vh;
+      flex-direction: row;
+}
+
+    /*animación bandera-nav*/
+.anim {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0,0,0,0);
+    border: 2px solid;
+    border-color: black;
+    transition: all 1s ease;
+    position: relative;
+}
+.anim:hover {
+    background: #4298ba;
+    color: #fff !important;
+}

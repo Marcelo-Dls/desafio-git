@@ -1,0 +1,10 @@
+#todos los html // Agregué titles mas largos y distintos.
+    -Agregué/modifique
+
+#Todos los html // Agregué keywords.
+    -Turismo, Buenos Aires, Argentina ...
+
+#Galeria.html // Agregué slider
+    -No esta terminado, falta entre otras cosas ajustar las imagenes y crear botones.
+
+#Agregué Favicon    

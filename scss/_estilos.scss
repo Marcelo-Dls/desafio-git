@@ -1,32 +1,5 @@
 
-  /*estilos bandera-nav*/
-  .inicio {
-      background-image: url(https://tse3.mm.bing.net/th?id=OIP.sQuOF3qAxaPja7H9JQfJHQHaE3&pid=Api);
-      background-repeat:repeat-x;
-      background-position: top;
-      display: flex;
-        justify-content: space-around;
-        align-items: top;
-        height: 50vh;
-        flex-direction: row;
-  }
-  /*animación bandera-nav*/
-  .anim {
-      font-size: 20px;
-      font-weight: 500;
-      padding: 0.5em 1.2em;
-      background: rgba(0,0,0,0);
-      border: 2px solid;
-      border-color: black;
-      transition: all 1s ease;
-      position: relative;
-  }
-  .anim:hover {
-      background: #4298ba;
-      color: #fff !important;
-  }
- 
-  /* destacar y dividir secciones*/
+    /* destacar y dividir secciones*/
   .titulos {
       padding: 10px;
       color: #fff;
@@ -37,8 +10,8 @@
       font-style: oblique;
       font-size: 20px;
       border: solid 5px black;
-  }
-  /* centrar items*/
+}
+    /* centrar items*/
   #centrar {
       padding: 5px;
       margin: 5px;
@@ -50,73 +23,20 @@
       font-family: Arial, Helvetica, sans-serif;
       font-style: oblique;
       font-size: 20px;
-  }
-  /*th de tablas*/
+}
+    /*th de tablas*/
   .encabezados {
       color: black;
       text-decoration:underline;
-  }
+}
   div {
     padding: 5px;
     margin: 10px;
     text-align: center;
 
 }
-  /*grid  mas-visitados
-  .catalogo {
-      background-color:rgb(255, 204, 0);
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 300px 300px 300px;
-      text-align: center;
-      border: solid 3px rgb(222, 55, 83);
-      border-radius: 10px;
   
-  }
-  .catalogo div {
-      padding: 15px;
-      margin: 5px; 
-      border: solid 3px rgb(222, 55, 83);
-  }
-  */
-  /* catalogo de inicio
-  .catalogo-2 {
-      background-color:rgb(255, 204, 0);
-      display: grid;
-      grid-template-columns:auto;
-      grid-template-rows:repeat(3, 1fr);
-      text-align: center;
-      border: solid 3px rgb(222, 55, 83);
-      border-radius: 10px;
-  }
-  */
-  /*grids                                                                                                                                                                    
-  .contarea {
-      display: grid;
-      background-color: rgb(107, 225, 64);
-      border: solid 3px rgb(222, 55, 83);
-      grid-template-areas: 
-      "area1 area2"
-      "area3 area4";
-  }
-  
-  .area1 {
-      grid-area: area1;
-      text-decoration: underline;   
-      font-size: 25px;
-  }
-  .area2 {
-      grid-area: area2;
-      font-size: 20px;
-  }
-  .area3 {
-      grid-area: area3;
-  }
-  .area4 {
-      grid-area: area4;
-  }   
-  */
-  /*responsive-768 */
+    /*responsive-768 */
   @media screen and (max-width: 768px)  {
       main {
           padding: 5px;
@@ -186,9 +106,9 @@
       }
       
   }
-  /*end responsive-768 */
+    /*end responsive-768 */
   
-  /*responsive-425 */
+    /*responsive-425 */
   @media screen and (max-width: 425px) {
       
       .main {
@@ -227,5 +147,5 @@
           width: 100%;
       }     
   } 
-  /*end responsive-425 */
+    /*end responsive-425 */
   
