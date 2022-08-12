@@ -167,12 +167,6 @@ div {
   ul {
     display: flex;
     flex-flow: column-reverse; }
-  .cat-1 {
-    background-size: auto; }
-  .cat-4 {
-    background-size: cover; }
-  .cat-9 {
-    background-size: auto; }
   .contarea {
     height: 60vh;
     min-height: 350px;
@@ -193,24 +187,24 @@ div {
     padding-bottom: 75%;
     height: 0;
     overflow: hidden; }
-  .mapa-responsive iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
+    .mapa-responsive iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
   .catalogo {
     margin: 0;
     display: block;
     text-align: center;
     font-size: 1.5em;
     align-self: center; }
-  .catalogo div {
-    display: block;
-    align-items: center;
-    text-align: center;
-    background-size: cover;
-    max-width: 100%; } }
+    .catalogo div {
+      display: block;
+      align-items: center;
+      text-align: center;
+      background-size: cover;
+      max-width: 100%; } }
 
 /*end responsive-768 */
 /*responsive-425 */
@@ -218,6 +212,14 @@ div {
   .main {
     margin: 5px;
     padding: 5px; }
+  .inicio {
+    background-repeat: repeat-x;
+    background-position: top;
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    height: 50vh;
+    flex-direction: row; }
   nav {
     font-size: 1.5em;
     display: block;
