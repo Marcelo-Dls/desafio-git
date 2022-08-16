@@ -1,4 +1,23 @@
+    /*responsive-992 */
+
+@media screen  and (min-width: 992px)  {
+
+    /*switch slider*/  
+    .video-responsive {
+    display: none;
+    transition: all 1s ease;
+    }
+ }
+@media screen  and (max-width: 992px)  {
     
+    /*switch iframe*/  
+    .fondo-cont {
+        display: none;
+        transition: all 1s ease;
+    }
+ }     
+    /*end responsive-992 */
+
     /*responsive-768 */
     
   @media screen and (max-width: 768px)  {
@@ -7,12 +26,7 @@
           margin: auto;
           
       }
-
-      ul {
-          display: flex;
-          flex-flow: column-reverse;
-      }    
-      
+    
       .contarea {
           height: 60vh;
           min-height: 350px;
@@ -62,12 +76,31 @@
             max-width: 100%;
         }
       }
-      
-  }
+    /*navegador*/
+    .container-fluid {
+        flex-direction: column;
+        form {
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }  
+    /*bandera-nav*/
+    .inicio {
+        background-repeat: no-repeat;
+        flex-direction: column;
+        background-position: center;
+    }
+    /*menu-links*/
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+}
     /*end responsive-768 */
   
     /*responsive-425 */
-  @media screen and (max-width: 425px) {
+@media screen and (max-width: 425px) {
       
       .main {
           margin: 5px;
@@ -111,7 +144,7 @@
           border-collapse: collapse;
           border-spacing: 0;
           width: 100%;
-      }     
-  } 
+    }     
+} 
     /*end responsive-425 */
   

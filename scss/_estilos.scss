@@ -35,5 +35,28 @@
     text-align: center;
 
 }
-  
-    
+/*each*/
+$each-list: red, pink, white, yellow, green;  
+
+@each $color in $each-list {
+  .color-#{$color} {
+    background-color: $color;
+   }
+}
+
+/*map*/
+$map: (
+  twitter: red,
+  facebook: blue,
+  instagram: black,
+);
+
+@each $map, $color in $map {
+  .map-#{$map} {
+    color: $color;
+  }
+}
+.each-map {
+  padding: 5px;
+  margin: 5px;
+}
