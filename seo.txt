@@ -8,3 +8,8 @@
     -No esta terminado, falta entre otras cosas ajustar las imagenes y crear botones.
 
 #Agregué Favicon    
+
+16/08
+#Agregué Each y Map
+#Agregué media query de 992px para agregar un iframe que reemplace al slider, intentando usar el "if"
+#Modifique media query en // Bandera-nav, menu-links, navegador // 

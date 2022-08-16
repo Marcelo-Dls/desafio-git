@@ -35,117 +35,28 @@
     text-align: center;
 
 }
-  
-    /*responsive-768 */
-  @media screen and (max-width: 768px)  {
-      main {
-          padding: 5px;
-          margin: auto;
-          
-      }
-      ul {
-          display: flex;
-          flex-flow: column-reverse;
-      }    
-      .cat-1 {
-          background-size:auto;
-      }
-      .cat-4 {
-          background-size:cover;
-      }
-      .cat-9 {
-          background-size:auto;
-      }
-      .contarea {
-          height: 60vh;
-          min-height: 350px;
-          padding: 24px;
-          display: block;
-          image-orientation: from-image;
-          align-content: center;
-      }
-      textarea {
-          padding: 5px;
-          margin: auto;
-          width: 100%;
-      }
-      .catalogo-2 {
-          display: block;
-      }
-      .img-responsive {
-         display: none;
-      }
-      .mapa-responsive {
-          position: relative;
-          padding-bottom: 75%; 
-          height: 0;
-          overflow: hidden;
-      }
-      .mapa-responsive iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-      }    
-      .catalogo {
-          margin: 0;
-          display: block;
-          text-align: center;
-  
-          font-size: 1.5em;
-          align-self:center;
-      }
-      .catalogo div {
-          display: block;
-          
-          align-items: center;
-          text-align: center;
-          background-size: cover;
-          max-width: 100%;
-      }
-      
+/*each*/
+$each-list: red, pink, white, yellow, green;  
+
+@each $color in $each-list {
+  .color-#{$color} {
+    background-color: $color;
+   }
+}
+
+/*map*/
+$map: (
+  twitter: red,
+  facebook: blue,
+  instagram: black,
+);
+
+@each $map, $color in $map {
+  .map-#{$map} {
+    color: $color;
   }
-    /*end responsive-768 */
-  
-    /*responsive-425 */
-  @media screen and (max-width: 425px) {
-      
-      .main {
-          margin: 5px;
-          padding: 5px;
-      }
-  
-      nav {
-          font-size: 1.5em;
-          display: block;
-          margin: 24px 0;
-      }
-      .contarea {
-          display: block;
-      }
-  
-      .catalogo div {
-          display: block;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-          background-size: cover;
-          max-width: 100%;
-      }
-      div img {
-          display: none;
-      }
-      
-      form {
-          margin: 0px;
-      }
-      .tabla-responsive {
-          display: none;
-          border-collapse: collapse;
-          border-spacing: 0;
-          width: 100%;
-      }     
-  } 
-    /*end responsive-425 */
-  
+}
+.each-map {
+  padding: 5px;
+  margin: 5px;
+}

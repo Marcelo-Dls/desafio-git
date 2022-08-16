@@ -13,6 +13,7 @@
   flex-direction: row;
   justify-content: center; }
   .menu div {
+    height: 100px;
     color: #fff;
     width: 350px;
     border: solid black;
@@ -71,6 +72,9 @@ ul.slider {
     height: 300px;
     transition: opacity .5s; }
     ul.slider li img {
+      display: flex;
+      justify-items: center;
+      justify-self: center;
       width: 90%;
       height: 250px;
       object-fit: cover; }
@@ -159,20 +163,55 @@ div {
   margin: 10px;
   text-align: center; }
 
+/*each*/
+.color-red {
+  background-color: red; }
+
+.color-pink {
+  background-color: pink; }
+
+.color-white {
+  background-color: white; }
+
+.color-yellow {
+  background-color: yellow; }
+
+.color-green {
+  background-color: green; }
+
+/*map*/
+.map-twitter {
+  color: red; }
+
+.map-facebook {
+  color: blue; }
+
+.map-instagram {
+  color: black; }
+
+.each-map {
+  padding: 5px;
+  margin: 5px; }
+
+/*responsive-992 */
+@media screen and (min-width: 992px) {
+  /*switch slider*/
+  .video-responsive {
+    display: none;
+    transition: all 1s ease; } }
+
+@media screen and (max-width: 992px) {
+  /*switch iframe*/
+  .fondo-cont {
+    display: none;
+    transition: all 1s ease; } }
+
+/*end responsive-992 */
 /*responsive-768 */
 @media screen and (max-width: 768px) {
   main {
     padding: 5px;
     margin: auto; }
-  ul {
-    display: flex;
-    flex-flow: column-reverse; }
-  .cat-1 {
-    background-size: auto; }
-  .cat-4 {
-    background-size: cover; }
-  .cat-9 {
-    background-size: auto; }
   .contarea {
     height: 60vh;
     min-height: 350px;
@@ -193,24 +232,40 @@ div {
     padding-bottom: 75%;
     height: 0;
     overflow: hidden; }
-  .mapa-responsive iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
+    .mapa-responsive iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
   .catalogo {
     margin: 0;
     display: block;
     text-align: center;
     font-size: 1.5em;
     align-self: center; }
-  .catalogo div {
-    display: block;
-    align-items: center;
-    text-align: center;
-    background-size: cover;
-    max-width: 100%; } }
+    .catalogo div {
+      display: block;
+      align-items: center;
+      text-align: center;
+      background-size: cover;
+      max-width: 100%; }
+  /*navegador*/
+  .container-fluid {
+    flex-direction: column; }
+    .container-fluid form {
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: center; }
+  /*bandera-nav*/
+  .inicio {
+    background-repeat: no-repeat;
+    flex-direction: column;
+    background-position: center; }
+  /*menu-links*/
+  .menu {
+    flex-direction: column;
+    align-items: center; } }
 
 /*end responsive-768 */
 /*responsive-425 */
@@ -218,6 +273,14 @@ div {
   .main {
     margin: 5px;
     padding: 5px; }
+  .inicio {
+    background-repeat: repeat-x;
+    background-position: top;
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    height: 50vh;
+    flex-direction: row; }
   nav {
     font-size: 1.5em;
     display: block;
