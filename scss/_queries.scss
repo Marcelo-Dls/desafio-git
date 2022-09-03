@@ -90,6 +90,7 @@
         background-repeat: no-repeat;
         flex-direction: column;
         background-position: center;
+        align-items: center;
     }
     /*menu-links*/
     .menu {
@@ -107,13 +108,14 @@
           padding: 5px;
       }
       .inicio {
-        background-repeat:repeat-x;
-        background-position: top;
+        background-repeat:repeat-x;/*no repeat*/
+        background-position: top;/*center*/
         display: flex;
-          justify-content: space-around;
-          align-items: top;
-          height: 50vh;
-          flex-direction: row;
+        justify-content: space-around;
+        align-items: top;/*center*/
+        height: 50vh;
+        flex-direction: column;/*row*/
+        }
     }
       nav {
           font-size: 1.5em;
@@ -145,6 +147,6 @@
           border-spacing: 0;
           width: 100%;
     }     
-} 
+ 
     /*end responsive-425 */
   

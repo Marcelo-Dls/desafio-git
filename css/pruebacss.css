@@ -122,11 +122,19 @@ ul.slider li:target {
   border: 2px solid;
   border-color: black;
   transition: all 1s ease;
-  position: relative; }
+  position: relative;
+  animation: anim 5s ease-in;
+  animation-fill-mode: forwards; }
 
 .anim:hover {
   background: #4298ba;
   color: #fff !important; }
+
+@keyframes anim {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(200px); } }
 
 /* destacar y dividir secciones*/
 .titulos {
@@ -261,7 +269,8 @@ div {
   .inicio {
     background-repeat: no-repeat;
     flex-direction: column;
-    background-position: center; }
+    background-position: center;
+    align-items: center; }
   /*menu-links*/
   .menu {
     flex-direction: column;
@@ -275,33 +284,43 @@ div {
     padding: 5px; }
   .inicio {
     background-repeat: repeat-x;
+    /*no repeat*/
     background-position: top;
+    /*center*/
     display: flex;
     justify-content: space-around;
     align-items: top;
+    /*center*/
     height: 50vh;
-    flex-direction: row; }
-  nav {
-    font-size: 1.5em;
-    display: block;
-    margin: 24px 0; }
-  .contarea {
-    display: block; }
-  .catalogo div {
-    display: block;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-size: cover;
-    max-width: 100%; }
-  div img {
-    display: none; }
-  form {
-    margin: 0px; }
-  .tabla-responsive {
-    display: none;
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%; } }
+    /*row*/ } }
+
+nav {
+  font-size: 1.5em;
+  display: block;
+  margin: 24px 0; }
+
+.contarea {
+  display: block; }
+
+.catalogo div {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  max-width: 100%; }
+
+div img {
+  display: none; }
+
+form {
+  margin: 0px; }
+
+.tabla-responsive {
+  display: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%; }
 
 /*end responsive-425 */
