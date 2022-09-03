@@ -20,8 +20,18 @@
     border-color: black;
     transition: all 1s ease;
     position: relative;
+    animation: anim 5s ease-in;
+    animation-fill-mode: forwards;
 }
 .anim:hover {
     background: #4298ba;
     color: #fff !important;
+}
+@keyframes anim {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(200px);
+    } 
 }
